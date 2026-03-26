@@ -66,57 +66,28 @@ Pastikan Anda sudah menginstal:
 
 ---
 
-## Langkah 1: Training Model Machine Learning
+## Cara menjalankan project
 
-1. Buka terminal dan masuk ke root folder project `ai-sales-prediction-system`.
-2. Buat virtual environment:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-3. Install dependensi ML:
-   ```bash
-   pip install -r ml/requirements.txt
-   ```
-4. Jalankan script training:
-   ```bash
-   python ml/train.py
-   ```
-   *Script ini akan membaca `data/sales_data.csv` dan menghasilkan file `ml/model.pkl`.*
+### 1. Train model
+```bash
+cd ml
+pip install -r requirements.txt
+python train.py
+```
 
----
+### 2. Jalankan backend
+```bash
+cd ../backend
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
+```
 
-## Langkah 2: Menjalankan Backend FastAPI
-
-1. Masih di terminal yang sama (didalam virtual environment aktif):
-   ```bash
-   pip install -r backend/requirements.txt
-   ```
-2. Jalankan server FastAPI menggunakan `uvicorn`:
-   ```bash
-   uvicorn backend.main:app --reload
-   ```
-   *Backend akan berjalan di `http://localhost:8000`.*
-3. (Opsional) Buka `http://localhost:8000/docs` untuk mengunjungi dokumentasi API interaktif dari Swagger.
-
----
-
-## Langkah 3: Menjalankan Frontend React
-
-1. Buka tab/jendela terminal baru.
-2. Masuk ke folder `frontend`:
-   ```bash
-   cd frontend
-   ```
-3. Install dependensi NPM:
-   ```bash
-   npm install
-   ```
-4. Jalankan Vite development server:
-   ```bash
-   npm run dev
-   ```
-   *Frontend akan berjalan di address yang tertera di terminal (contoh `http://localhost:5173`).*
+### 3. Jalankan frontend
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
 
 ---
 
