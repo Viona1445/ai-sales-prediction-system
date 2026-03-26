@@ -10,6 +10,23 @@ Sistem ini adalah mini AI Sales Prediction System yang dibangun menggunakan:
 - **Machine Learning**: Scikit-learn (Logistic Regression), Pandas, Numpy
 - **Authentication**: JWT Dummy User
 
+## Demo Video
+https://drive.google.com/drive/folders/17mmcqL80xKBqgyFZbh68CRLHk_dSRRai
+
+## UI Preview
+
+### Login
+<img width="1907" height="974" alt="Screenshot 2026-03-26 at 16 05 04" src="https://github.com/user-attachments/assets/82b1c32e-7cac-46c2-b3e7-1eb63011e1a9" />
+
+### Dashboard
+<img width="1910" height="981" alt="Screenshot 2026-03-26 at 16 05 29" src="https://github.com/user-attachments/assets/3128f2c5-64f5-4b5d-9a13-f150b4423f7e" />
+
+### Prediction
+<img width="1912" height="974" alt="Screenshot 2026-03-26 at 16 05 55" src="https://github.com/user-attachments/assets/862da4fe-35cc-452c-8598-8bda88393077" />
+
+### API (Swagger)
+<img width="1907" height="980" alt="Screenshot 2026-03-26 at 16 06 27" src="https://github.com/user-attachments/assets/9124a8aa-8e2a-4956-957a-e45c43d7bd6d" />
+
 ## 1. System Design & Arsitektur Singkat
 
 **Diagram Arsitektur**
