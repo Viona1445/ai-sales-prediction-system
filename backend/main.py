@@ -6,14 +6,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Dict, Any
 
-from backend.auth import DUMMY_USER, create_access_token
+from auth import DUMMY_USER, create_access_token
 
 app = FastAPI(title="AI Sales Prediction API")
 
 # Setup CORS (untuk React nantinya)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
